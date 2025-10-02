@@ -11,100 +11,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 
     <style>
+
         *{
             margin: 0px;
             padding: 0px;
             font-family: 'Lexend';
         }
+        
         body{
             background-color: lightBlue;
             align-items: center;
-        }
-        header{
             width: 100%;
-            border-bottom: solid 3px #486980;
-            height: 60px;
-            font-size: 250%;
             justify-content: center;
             align-items: center;
-            display: flex;
+        }
+
+        header{
+            width: auto;
+            border-bottom: solid 3px #486980;
+            height: auto;
+            font-size: 40px;
+            text-align: center;
             color: rgb(72, 105, 128);
         }
-        #carousel-section, #video-section {
+
+        #carousel-section{
+        }
+
+        #video-section{
+            width: 50%;
+        }
+
+       #note{
             margin: 40px auto;
-            max-width: 500px;
-            width: 95vw;
-            box-sizing: border-box;
-        }
-        #carousel-section h2, #video-section h2 {
-            font-size: 2em;
-        }
-        #carouselImg {
-            width: 100%;
-            max-width: 350px;
+            width: 35%;
             height: auto;
-            aspect-ratio: 7/5;
-        }
-        #prevBtn, #nextBtn {
-            font-size: 2.5em;
-        }
-        #carouselLabel {
-            margin-top: 15px;
-            font-size: 1.1em;
-            min-height: 2em;
-        }
-        #video-section video {
-            width: 100%;
-            max-width: 450px;
-            height: auto;
-            aspect-ratio: 16/9;
-        }
-        #note {
-            margin: 40px auto;
-            width: 95vw;
-            max-width: 400px;
             padding: 20px;
             border: solid 3px #486980;
             border-radius: 10px;
             background: #eaf6fb;
-            font-size: 1.1em;
+            font-size: 1.2em;
             color: #486980;
             font-weight: 500;
             text-align: center;
-        }
-        @media (max-width: 600px) {
-            header {
-                font-size: 1.1em;
-                height: 40px;
-            }
-            #carousel-section, #video-section {
-                max-width: 99vw;
-                width: 99vw;
-                margin: 20px auto;
-                padding: 0;
-            }
-            #carousel-section h2, #video-section h2 {
-                font-size: 1.1em;
-                margin-bottom: 12px;
-            }
-            #prevBtn, #nextBtn {
-                font-size: 1.5em;
-            }
-            #carouselImg {
-                max-width: 98vw;
-                width: 98vw;
-            }
-            #video-section video {
-                max-width: 98vw;
-                width: 98vw;
-            }
-            #note {
-                font-size: 0.95em;
-                padding: 8px;
-                max-width: 98vw;
-                width: 98vw;
-            }
-        }
+       }
+
     </style>
 
 
@@ -113,11 +64,11 @@
 
     <header>Happy 53rd Birthday Papa</header>
 
-    <section id="carousel-section" style="margin: 40px auto; max-width: 500px; align-items: center; justify-content: center; display: flex; flex-direction: column;">
+    <section id="carousel-section" style="margin: 40px auto; align-items: center; justify-content: center; display: flex; flex-direction: column;">
         <h2 style="color:#486980; font-size:2em; margin-bottom:20px; font-weight:700; text-align:center; letter-spacing:2px;">Memories</h2>
         <div style="display: flex; align-items: center; justify-content: center;">
             <button id="prevBtn" style="font-size:3em; background:none; border:none; cursor:pointer; color: #486980;">&#8592;</button>
-            <img id="carouselImg" src="images/test.png" alt="Birthday Photo" style="width:350px; height:250px; object-fit:cover; border-radius:10px; border:5px solid #486980; margin:0 20px;">
+            <img id="carouselImg" src="images/test.png" alt="Birthday Photo" style="width:60%; height:40%; object-fit:cover; border-radius:10px; border:5px solid #486980; margin:0 20px;">
             <button id="nextBtn" style="font-size:3em; background:none; border:none; cursor:pointer; color: #486980;">&#8594;</button>
         </div>
         <div id="carouselLabel" style="margin-top:15px; font-size:1.2em; color:#486980; font-weight:500; min-height:2em; text-align:center;"></div>
@@ -166,9 +117,9 @@
         };
     </script>
 
-    <section id="video-section" style="margin: 40px auto 0 auto; max-width: 500px; text-align: center;">
+    <section id="video-section" style="margin: 40px auto 0 auto; text-align: center;">
         <h2 style="color:#486980; font-size:2em; margin-bottom:20px; font-weight:700; text-align:center; letter-spacing:2px;">Special Video</h2>
-        <video id="birthdayVideo" width="450" height="260" controls style="border-radius:10px; border:5px solid #486980; background:#eaf6fb;">
+        <video id="birthdayVideo" width=60% height=40% controls style="border-radius:10px; border:5px solid #486980; background:#eaf6fb;">
             <source src="videos/papa.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -181,4 +132,21 @@
 </body>
 
 
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
